@@ -1,5 +1,4 @@
 import settings from "./settings.js";
-import settingsBubbleTable from "./settings_bubbleTable.js";
 import {showRank} from "./showrank.js";
 
 const map = d3.select(".dashboard .map")
@@ -72,17 +71,6 @@ function showAirport() {
 
   // show airport rank
   showRank(selectedAirpt);
-
-  // ****WHEN bubbleTable.js IS DEVELOPED****
-  // !!!!!!! WIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  if (!rankData[selectedAirpt]) {
-    return d3.json(`data/air/rankdata_${selectedAirpt}.json`, (aptData) => {
-      rankData[selectedAirpt] = aptData;
-      bubbleTable(testChart, settingsBubbleTable, rankData[selectedAirpt]);
-    });
-  }
-  // bubbleTable(testChart, settings_bubbleTable, rank_data[selected_airpt]);
-  // !!!!!!! WIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 getCanadaMap(map).on("loaded", function() {

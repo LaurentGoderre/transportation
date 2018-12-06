@@ -48,30 +48,6 @@
 	fill: black;
   stroke: none;
 	font-size: 14px;
-
-}
-.domain {
-	display: none;
-}
-.tick text {
-	fill: #96A8B2;
-	stroke: none;
-	font-size: 14px;
-	font-family: "Noto Sans", sans-serif;
-}
-.tick line {
-	stroke: none;
-}
-.bubble-row-text {
-	fill: #96A8B2;
-	stroke: none;
-	font-size: 14px;
-}
-.bubble-text {
-	fill: black;
-  stroke: none;
-	font-size: 14px;
-	text-anchor: middle;
 }
 
 /*rail dataset*/
