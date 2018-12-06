@@ -12,23 +12,11 @@ const rankChart = d3.select(".rankdata")
     .append("svg")
     .attr("id", "svg_rankChart");
 
-// !!!!!!! WIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// for bubble table of airport ranks made by resuable component
-// let testChart = d3.select(".testrankdata")
-//     .append("svg")
-//       .attr("id", "svg_testChart");
-
-const testChart = d3.select("#rankTable") // .select(".data")
-    .append("svg")
-    .attr("id", "svg_testChart");
-// !!!!!!! WIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 const data = {};
 let selected = "CANADA"; // default region for areaChart
 
 let selectedAirpt;
 let selectedProv;
-const rankData = {};
 
 /* canada map */
 const heading = d3.select(".dashboard h4");
